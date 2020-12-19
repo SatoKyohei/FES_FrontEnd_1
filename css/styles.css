@@ -1,0 +1,679 @@
+/******************************** header ***********************************/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background: #3C6BB9;
+}
+
+header > h1 {
+  margin-left: 24px;
+  font-size: 36px;
+  color: #fff;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 568px;
+  margin-right: 24px;
+}
+
+.header_nav a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* header modal */
+
+.menu_icon {
+  display: none;
+  color: #fff;
+  margin-right: 24px;
+}
+
+.header_nav_transition {
+  transform: translateY(-500px);
+  transition: all 600ms ease 0s;
+  position: fixed;
+  top: 100px;
+  z-index: 12;
+  width: 100%;
+  height: 300px;
+  background-color: #fff;
+
+}
+
+.header_nav_transition ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.header_nav_transition ul li {
+  list-style: none;
+}
+
+
+.header_nav_transition ul li a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.header_nav_active {
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+/******************************** main ***********************************/
+
+/************ HERO *************/
+
+.hero {
+  color: #FFFFFF;
+  position: relative;
+}
+
+.hero img {
+  width: 100vw;
+}
+
+.hero_title {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero_title h1 {
+  font-size: 66px;
+}
+
+.hero_title p {
+  font-size: 32px;
+}
+
+
+/************ About *************/
+
+.about {
+  padding: 60px 0;
+}
+
+.about > h2 {
+  text-align: center;
+  font-size: 32px;
+}
+
+.about_container {
+  display: flex;
+  justify-content: center;
+}
+
+.about_image {
+  margin-right: 108px;
+  z-index: 3;
+}
+
+.about_image img {
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.about_profile_heading {
+  margin-bottom: 30px;
+}
+
+.about_profile h2 {
+  font-size: 36px;
+}
+
+.about_profile p {
+  font-size: 24px;
+}
+
+.about_profile ul li {
+  font-size: 20px;
+}
+
+
+
+/*********** Features ************/
+
+.features {
+  background: #3C6BB9;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.features > h2 {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.features_container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.features_item {
+  opacity: 0;
+  transition: all 500ms ease-in 0s;
+}
+
+.features_item.scrollin {
+  opacity: 1;
+}
+
+.features_item div {
+  width: 150px;
+  height: 150px;
+  background: white;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.features_item div i {
+  line-height: 150px;
+}
+
+.features_item h3 {
+  color: #fff;
+  margin-top: 24px;
+}
+
+.features_item p {
+  color: #fff;
+}
+
+
+
+
+/************ Skills *************/
+
+.skills {
+  padding: 60px 0;
+}
+
+.skills > h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.graph_container {
+  display: flex;
+}
+
+.graph_container_left, .graph_container_right {
+  width: 100%;
+}
+
+.border_graph {
+  max-width: 80%;
+  margin: 40px auto;
+}
+
+.graph_frame {
+  background: #EBEBEB;
+  border-radius: 20px;
+}
+
+.graph_inner {
+  height: 40px;
+  border-radius: 20px;
+  position: relative;
+  width: 0;
+  transition: all 500ms ease 0s;
+}
+
+.graph_inner p {
+  color: #fff;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.html {
+  background: #FF8848;
+}
+
+.CSS {
+  background: #52AFFF;
+}
+
+.JS {
+  background: #FFEB52;
+}
+
+.joke {
+  background: #6ED972;
+}
+
+.alcohol {
+  background: #FF7CF5;
+}
+
+.secret {
+  background: #FF5252;
+}
+
+.html.scrollin2 {
+  width: 80%;
+}
+
+.CSS.scrollin2 {
+  width: 80%;
+}
+
+.JS.scrollin2 {
+  width: 20%;
+}
+
+.joke.scrollin2 {
+  width: 60%;
+}
+
+.alcohol.scrollin2 {
+  width: 70%;
+}
+
+.secret.scrollin2 {
+  width: 80%;
+}
+
+
+/************ Career *************/
+
+.career {
+  background: #3C6BB9;
+  padding: 60px 0;
+}
+
+.career > h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.career_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.career_item {
+  width: 20%;
+}
+
+.career_item img {
+  width: 100%;
+  height: 150px;
+}
+
+.career_text {
+  background: #fff;
+  padding: 20px 16px;
+}
+
+.career_text h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.career_text p {
+  font-size: 12px;
+}
+
+
+/*********** Creative ************/
+
+.creative {
+  padding: 60px 0;
+}
+
+.creative_heading {
+  text-align: center;
+}
+
+.creative_heading h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.creative_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-between;
+}
+
+.creative_item1 {
+  flex-basis: 500px;
+  margin-top: 60px;
+}
+
+.creative_item2 {
+  flex-basis: 500px;
+  margin-top: 60px;
+}
+
+.creative_item3 {
+  flex-basis: 500px;
+  margin-top: 60px;
+}
+
+.creative_item4 {
+  flex-basis: 500px;
+  margin-top: 60px;
+}
+
+
+/* creative modal */
+
+.modal_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(76,76,76,0.9);
+  z-index: 9;
+}
+
+.modal_container {
+  width: 90%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 50px;
+  z-index: 10;
+}
+
+.modal_container > div {
+  text-align: right;
+}
+
+.modal_container ul li {
+  margin-top:16px;
+}
+
+.fa-times-circle {
+  text-align: right;
+}
+
+.modal_hidden {
+  display: none;
+}
+
+
+
+/************ Contact *************/
+
+.contact {
+  padding: 60px 100px;
+  background: #3C6BB9;
+}
+
+.contact > h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+}
+
+.contact_container {
+  display: flex;
+  background: #fff;
+  border-radius: 25px;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 120px;
+  justify-content: space-between;
+}
+
+.contact_heading_container {
+  padding: 90px 0;
+  max-width: 432px;
+  margin-right: 32px;
+}
+
+.contact_heading_container > h3 {
+  text-align: center;
+  font-size: 28px;
+}
+
+.contact_heading_container > p {
+  font-size: 16px;
+}
+
+.contact_link_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 250px;
+  align-self: center;
+}
+
+.contact_link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact_link img {
+  width: 100px;
+  height: 100px;
+}
+
+
+/******************************** footer ***********************************/
+
+footer {
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background: #183565;
+  color: #fff;
+}
+
+
+
+/********************************** media query ******************************/
+/********************************** media query ******************************/
+
+@media(max-width: 1110px){
+  
+  
+  /* contact */
+  .contact_container {
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 0;
+  }
+
+  .contact_heading_container {
+    margin: 0 auto; 
+    padding: 0;
+  }
+
+  .career_item {
+    width: 35%;
+    margin-bottom: 32px;
+  }
+
+}
+
+@media(max-width: 1080px){
+  .header_nav {
+    display: none;
+  }
+
+  .menu_icon {
+    display: block;
+  }
+  
+}
+
+/********************************** ※ここから修正※ ******************************/
+
+@media(max-width: 767px){
+
+  header > h1 {
+    font-size: 24px;
+    align-self: center;
+  }
+
+  header div a {
+    font-size: 16px;
+  }
+
+
+
+  /* HERO */
+
+  .hero_title h1 {
+    font-size: 32px;
+  }
+
+  .hero_title p {
+    font-size: 16px;
+  }
+
+
+
+  /* About */
+
+  .about_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about_image {
+    margin: 20px 0;
+  }
+  
+  .about_image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about_profile_heading {
+    text-align: center;
+  }
+
+  .about_profile_heading h2 {
+    font-size: 30px;
+  }
+
+  .about_profile_heading p {
+    font-size: 20px;
+  }
+
+  .about_profile ul li {
+    font-size: 12px;
+  }
+
+
+
+  /* features */
+
+  .features_container {
+    flex-direction: column;
+  }
+
+  .features_item {
+    margin-top: 30px;
+  }
+
+  .features_item i {
+    font-size: 60px;
+    line-height: 100px;
+  }
+
+  .features_item div {
+    width: 100px;
+    height: 100px;
+  }
+
+  .features_item > h3 {
+    font-size: 20px;
+  }
+
+  .features_item > p {
+    font-size: 12px;
+  }
+
+
+
+  /* skills */
+  .graph_container {
+    flex-direction: column;
+    margin: 0 30px;
+  }
+
+  .border_graph {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .border_graph > p {
+    font-size: 16px;
+  }
+
+  .graph_inner > p {
+    font-size: 24px;
+  }
+
+  
+
+  /* career */
+  .career > h2 {
+    margin: 0;
+  }
+
+  .career_container {
+    /* flex-direction: column;
+    align-items: center; */
+  }
+
+  .career_item {
+    margin-top: 40px;
+  }
+
+
+  /* Creative */
+
+
+
+  /* Contact */
+
+
+
+
+
+}
